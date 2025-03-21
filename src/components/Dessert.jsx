@@ -12,7 +12,7 @@ function Dessert({ d }) {
   const [alreadyAdded, setAlreadyAdded] = useState(false);
 
   useEffect(() => {
-    setAlreadyAdded(d.amount !==0);
+    setAlreadyAdded(d.amount !== 0);
   }, [d.amount]);
 
   const addDessert = (d) => {
